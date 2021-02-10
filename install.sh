@@ -1,6 +1,6 @@
 #!/bin/sh
 #sudo apt-get update  # To get the latest package lists
-pip install -U -r requirements.txt
+pip install -r requirements.txt
 #pip install pandas
 #conda create -n djangoenv
 #conda activate djangoenv
