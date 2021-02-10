@@ -1,0 +1,10 @@
+.hidden {
+  opacity: 0;
+}
+.toast {
+  background-color: rebeccapurple;
+  color: white;
+  padding: 2rem;
+  border-radius: 5px;
+  margin: 10px;
+}

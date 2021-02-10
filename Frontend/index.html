@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>XMEME</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css"/>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <!-- Navbar content -->
+      <a class="navbar-brand" href="#">XMeme</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link active" href="#">Submit Meme<span class="sr-only">(current)</span></a>
+          <a class="nav-item nav-link" href="display.html">All Meme</a>
+          <a class="nav-item nav-link" href="searchMeme.html">Search Meme</a>
+          <a class="nav-item nav-link" href="https://xmeme-api-akansha.herokuapp.com/swagger-ui/">API Docs</a>
+        </div>
+      </div>
+    
+    </nav>
+    <div class="alert hidden " role="alert">
+       
+    </div>
+    <div class="container">
+    
+      <h2>XMEME</h2>
+      <form id="formMeme" href="#" method="POST">
+        <div class="form-group">
+          <label for="name">name:</label>
+          <input
+            type="text"
+            class="form-control form__name"
+            id="name"
+            placeholder="Enter name"
+            name="name"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="pwd">Caption</label>
+          <input
+            type="text"
+            class="form-control form__caption"
+            id="caption"
+            placeholder="Enter catchy caption"
+            name="caption"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="pwd">meme url</label>
+          <input
+            type="url"
+            class="form-control form__url"
+            id="memeURL"
+            placeholder="Enter valid URL"
+            name="memeURL"
+            required
+          />
+        </div>
+        <div class="form-group form-check">
+          <label class="form-check-label">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              name="remember"
+              required
+            />
+            I agree to enter in this meme community :P
+            <div class="valid-feedback">Valid.</div>
+            <div class="invalid-feedback">Check this checkbox to continue.</div>
+          </label>
+        </div>
+        <button type="submit" class="btn btn-primary memeSubmit">Submit</button>
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
