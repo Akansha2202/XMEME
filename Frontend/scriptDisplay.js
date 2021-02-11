@@ -9,7 +9,8 @@ const displayResult = function (arr) {
   for (let i = 0; i < arr.length; i++) {
     const html = `
     
-    <div class="card card_container" data-id="${arr[i].id}" style="width: 25rem;">
+    <div class="col-sm col-md-4">
+    <div class="card card_container " data-id="${arr[i].id}"style="width:100% ;">
         <img class="card-img-top" src="${arr[i].url}" alt="Card image cap">
         <div class="card-body">
             <h5 class="card-title">${arr[i].caption}</h5>
@@ -22,6 +23,7 @@ const displayResult = function (arr) {
           
         </div>
         
+    </div>
     </div>
     `;
     memeContainer.insertAdjacentHTML("beforeend", html);
