@@ -5,3 +5,5 @@ requests
 djangorestframework
 django-cors-headers
 drf-yasg
+ruamel-yaml==0.15.46
+ruamel.yaml.clib==0.2.2
