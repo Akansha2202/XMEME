@@ -24,7 +24,7 @@ pip3 install -U -r requirements.txt
 #conda create -n djangoenv
 #conda activate djangoenv
 
-cd ~/mini-akansha007-me_buildout_xmeme/Backend/XMEME
+cd ~/ubuntu/mini-akansha007-me_buildout_xmeme/Backend/XMEME
 #echo $(pwd)
 python manage.py makemigrations
 python manage.py migrate
