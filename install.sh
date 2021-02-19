@@ -5,7 +5,7 @@ activate(){
     . ./myprojectenv/bin/activate
 }
 
-sudo apt-get install python3-pip apache2 libapache2-mod-wsgi-py3
+sudo apt-get -y install python3-pip apache2 libapache2-mod-wsgi-py3
 pip3 install virtualenv
 virtualenv myprojectenv
 activate
